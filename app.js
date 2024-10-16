@@ -62,7 +62,7 @@ app.use((er, req, res, next) => {
 mongoose
   .connect(
     `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASS}@cluster0.wxmjvql.mongodb.net/bookstore?retryWrites=true&w=majority&appName=AtlasApp`
-    // "mongodb://nyatto:n20072003n@ac-qc9xfap-shard-00-00.wxmjvql.mongodb.net:27017,ac-qc9xfap-shard-00-01.wxmjvql.mongodb.net:27017,ac-qc9xfap-shard-00-02.wxmjvql.mongodb.net:27017/?ssl=true&replicaSet=atlas-tpeedm-shard-0&authSource=admin&retryWrites=true&w=majority&appName=AtlasApp"
+    
   )
   .then(() => {
     app.listen(5000);
